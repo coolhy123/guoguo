@@ -10,16 +10,16 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
  *
  * @author heyong
  */
-@Configuration
+//@Configuration
 public class CrossRequestInterapter extends WebMvcConfigurationSupport {
 
     @Autowired
     private CORSFilter corsFilter;
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(corsFilter)
-                //拦截所有的请求
-                .addPathPatterns("/**");
+//        registry.addInterceptor(corsFilter)
+//                //拦截所有的请求
+//                .addPathPatterns("/**");
 
     }
 }
